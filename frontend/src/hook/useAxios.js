@@ -10,18 +10,18 @@ export const useAxios = (address, cursor) => {
     try {
       let res;
       if (cursor) {
-        res = await axios.get("https://nft-wallet.onrender.com", {
+        res = await axios.get("https://nft-wallet.onrender.com/collections", {
           params: { address, cursor },
         });
       } else {
-        res = await axios.get("https://nft-wallet.onrender.com", {
+        res = await axios.get("https://nft-wallet.onrender.com/collections", {
           params: { address },
         });
       }
 
       let n = nfts;
       const data = {
-        cursor: res.data.result.cursor || null,
+        cursor: res.data.result.cursor,
         nfts: n.concat(res.data.result.result),
         address,
       };
