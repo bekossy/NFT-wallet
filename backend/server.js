@@ -11,6 +11,10 @@ const PORT = process.env.PORT || 4000;
 app.use(cors());
 app.use(express.json());
 
+app.get("/", (req, res) => {
+  res.status(200).send("<h1>Welcome to my NFT server</h1>");
+});
+
 app.get("/collections", async (req, res) => {
   try {
     const { query } = req;
