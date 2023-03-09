@@ -27,7 +27,7 @@ const Searchbar = () => {
 
       <div className="input">
         <input
-          placeholder="Address"
+          placeholder="Enter"
           type="text"
           id="contract"
           name="contract"

@@ -10,11 +10,11 @@ export const useAxios = (address, cursor) => {
     try {
       let res;
       if (cursor) {
-        res = await axios.get("http://localhost:4000/collections", {
+        res = await axios.get("https://nft-wallet.onrender.com", {
           params: { address, cursor },
         });
       } else {
-        res = await axios.get("http://localhost:4000/collections", {
+        res = await axios.get("https://nft-wallet.onrender.com", {
           params: { address },
         });
       }
