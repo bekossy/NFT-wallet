@@ -21,7 +21,7 @@ export const useAxios = (address, cursor) => {
 
       let n = nfts;
       const data = {
-        cursor: res.data.result.cursor,
+        cursor: res.data.result.cursor || null,
         nfts: n.concat(res.data.result.result),
         address,
       };
