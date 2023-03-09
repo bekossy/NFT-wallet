@@ -1,0 +1,103 @@
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  padding: 2rem 0.75rem 1rem;
+  z-index: 100;
+  background: #0d0d0d;
+  overflow-y: scroll;
+  margin: 0 auto;
+  height: 500px;
+  max-width: 500px;
+  border-radius: 8px;
+}
+
+.modal img {
+  width: 100%;
+  border-radius: 8px;
+}
+.modal h1 {
+  color: #00ffc8;
+  margin-top: 10px;
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.modal h2 {
+  color: #00ffc8;
+  font-size: 1.3rem;
+  letter-spacing: 0.5px;
+  margin-top: 7px;
+}
+.modal h3 {
+  color: #00ffc8;
+  font-size: 1rem;
+  margin-bottom: 10px;
+  letter-spacing: 0.5px;
+}
+
+.modal h3 span {
+  font-weight: 300;
+  font-size: 0.9rem;
+  color: #b2b3b4;
+}
+
+.modalTitle {
+  border-bottom: 1px solid #00ffc8;
+}
+
+.modal .preview {
+  padding: 5px;
+  color: #b2b3b4;
+  line-height: 1.3;
+  font-size: 0.95rem;
+}
+.modal > .preview a {
+  color: #00ffc8;
+  text-decoration: none;
+}
+
+.purchase-btn {
+  color: #171717;
+  display: block;
+  max-width: 150px;
+  margin: 1rem auto 0.5rem;
+  text-align: center;
+  padding: 10px 15px;
+  background-color: #00ffc8;
+  border-radius: 4px;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: all 0.3s ease-in-out;
+  border: 1px solid #00ffc8;
+}
+.purchase-btn:hover {
+  border: 1px solid #1e8999;
+  background-color: #1e8999;
+}
+
+.modal-btn {
+  position: absolute;
+  top: 0.2rem;
+  right: 0.5rem;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 550px) {
+  .modal {
+    max-width: 400px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .modal {
+    max-width: 350px;
+  }
+}
+@media screen and (max-width: 360px) {
+  .modal {
+    max-width: 280px;
+  }
+}

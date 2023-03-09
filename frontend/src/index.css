@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: #0d0d0d;
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.9),
+      rgba(0, 0, 0, 0.9)
+    ),
+    url("https://uploads-ssl.webflow.com/62619b1554b83719b06328bb/6275001134313315ff45869b_derek-thomson-NqJYQ3m_rVA-unsplash.jpg");
+  background-position: 0px 0px, 0px 0px;
+  background-size: auto, cover;
+  max-width: 1300px;
+  margin: 0.5rem auto;
+  padding: 10px;
+}
