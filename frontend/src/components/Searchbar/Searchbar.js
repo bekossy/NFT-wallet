@@ -27,7 +27,7 @@ const Searchbar = () => {
 
       <div className="input">
         <input
-          placeholder="Enter NFT"
+          placeholder="Address"
           type="text"
           id="contract"
           name="contract"
